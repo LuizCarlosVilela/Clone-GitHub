@@ -30,6 +30,7 @@ export const SearchForm = styled.form`
 
     &:focus {
       width: 318px;
+      background-color: var(--search-placeholder);
     }
     transition: width 0.2s ease-out, color 0.2s ease-out;
   }
