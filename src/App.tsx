@@ -2,10 +2,11 @@ import React from "react";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+//Estlo Global
 import GlobalStyles from "./styles/GlobalStyles";
 
+//Components e pages
 import Header from "./components/Header";
-
 import Profile from "./pages/Profile";
 import Repo from "./pages/Repo";
 
