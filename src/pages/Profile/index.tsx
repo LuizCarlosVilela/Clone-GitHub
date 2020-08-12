@@ -36,7 +36,7 @@ const Profile: React.FC = () => {
                   username={"luizcarlosvilela"}
                   reponame={"youtube-content"}
                   description={"Contains all of my YouTube lessons code"}
-                  language={n % 3 == 0 ? "javaScript" : "TypeScript"}
+                  language={n % 3 === 0 ? "javaScript" : "TypeScript"}
                   starts={8}
                   forks={4}
                 />

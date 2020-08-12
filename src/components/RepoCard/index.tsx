@@ -4,7 +4,7 @@ import {
   Container,
   Topside,
   RepoIcon,
-  BootSide,
+  BotSide,
   StartIcon,
   ForkIcon,
 } from "./styles";
@@ -41,7 +41,7 @@ const RepoCard: React.FC<Props> = ({
         <p>{description}</p>
       </Topside>
 
-      <BootSide>
+      <BotSide>
         <ul>
           <li>
             <div className={`language ${languageClass}`} />
@@ -58,7 +58,7 @@ const RepoCard: React.FC<Props> = ({
             <span>{forks}</span>
           </li>
         </ul>
-      </BootSide>
+      </BotSide>
     </Container>
   );
 };
