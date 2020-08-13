@@ -55,3 +55,10 @@ export const Repos = styled.div`
     }
   }
 `;
+
+export const CalendarHeading = styled.span`
+  font-size: 16px;
+  margin: 36px 0 9px;
+
+  display: inline-flex;
+`;
