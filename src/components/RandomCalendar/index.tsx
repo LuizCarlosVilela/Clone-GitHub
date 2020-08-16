@@ -22,7 +22,7 @@ const RandomCalendar: React.FC = () => {
         <Heatmap
           startDate={startDate}
           endDate={endDate}
-          values={values}
+          values={generateHeatmapValues(startDate, endDate)}
           gutterSize={3.5}
           classForValue={(item: HeatmapValue) => {
             let clampedCount = 0;
@@ -42,6 +42,19 @@ const RandomCalendar: React.FC = () => {
   );
 };
 
-const generateHeatmapValues = (startDate: Date, endDate: Date) => {};
+const generateHeatmapValues = (startDate: Date, endDate: Date) => {
+  const values: HeatmapValue[] = [];
+
+  let currentDate = startDate;
+  while (isBefore(currentDate, endDate) || isSameDay(currentDate, endDate)) {
+    const count = Math.random() * 4;
+
+    values.push({ date: currentDate, count: Math.round(count) });
+
+    currentDate = addDays(currentDate, 1);
+  }
+
+  return values;
+};
 
 export default RandomCalendar;
