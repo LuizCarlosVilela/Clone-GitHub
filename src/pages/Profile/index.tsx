@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 import {
   Container,
@@ -14,13 +15,59 @@ import {
 import ProfileDate from "../../components/ProfileDate";
 import RepoCard from "../../components/RepoCard";
 import RandomCalendar from "../../components/RandomCalendar";
+import { APIUser, APIRepo } from "../../@types/indext";
+
+interface Data {
+  user?: APIUser;
+  repos?: APIRepo[];
+  error?: string;
+}
 
 const Profile: React.FC = () => {
+  const { username = "LuizCarlosVilela" } = useParams();
+
+  const [data, setData] = useState<Data>();
+
+  useEffect(() => {
+    Promise.all([
+      fetch(`https://api.github.com/users/${username}`),
+      fetch(`https://api.github.com/users/${username}/repos`),
+    ]).then(async (response) => {
+      const [userResponse, reposResponse] = response;
+
+      if (userResponse.status === 404) {
+        setData({ error: "User not found!" });
+        return;
+      }
+
+      const user = await userResponse.json();
+      const repos = await reposResponse.json();
+
+      const shuffleRepos = repos.sort(() => 0.5 - Math.random());
+      const sliceRepos = shuffleRepos.slice(0, 6);
+
+      // console.log(user);
+      // console.log(repos);
+
+      setData({
+        user,
+        repos: sliceRepos,
+      });
+    });
+  }, []);
+
+  if (data?.error) {
+    return <h1>{data.error}</h1>;
+  }
+  if (!data?.user || !data?.repos) {
+    return <h1>Loading...</h1>;
+  }
+
   const TabContent = () => (
     <div className="content">
       <RepoIcon />
       <span className="label">Repositories</span>
-      <span className="number">39</span>
+      <span className="number">{data.user?.public_repos}</span>
     </div>
   );
 
@@ -38,17 +85,15 @@ const Profile: React.FC = () => {
       <Main>
         <LeftSide>
           <ProfileDate
-            username={"LuizCarlos"}
-            name={"Luiz Carlos Vilela dos Santos"}
-            avatarUrl={
-              "https://avatars3.githubusercontent.com/u/57350762?s=460&u=5c28607a6573c3f9ae703ebc9e23c31c916e3ab3&v=4"
-            }
-            followers={100}
-            following={10}
-            company={"Rocketseat"}
-            location={"Alagoas, Brazil"}
-            email={"luizinho.com.br"}
-            blog={undefined}
+            username={data.user.login}
+            name={data.user.name}
+            avatarUrl={data.user.avatar_url}
+            followers={data.user.followers}
+            following={data.user.fllowing}
+            company={data.user.company}
+            location={data.user.location}
+            email={data.user.email}
+            blog={data.user.blog ? data.user.blog : undefined}
           />
         </LeftSide>
 
@@ -62,15 +107,15 @@ const Profile: React.FC = () => {
             <h2>Random repos</h2>
 
             <div>
-              {[1, 2, 3, 4, 5, 6].map((n) => (
+              {data.repos.map((item) => (
                 <RepoCard
-                  key={n}
-                  username={"luizcarlosvilela"}
-                  reponame={"youtube-content"}
-                  description={"Contains all of my YouTube lessons code"}
-                  language={n % 3 === 0 ? "javaScript" : "TypeScript"}
-                  starts={8}
-                  forks={4}
+                  key={item.name}
+                  username={item.owner.login}
+                  reponame={item.name}
+                  description={item.description}
+                  language={item.language}
+                  starts={item.stargazers_count}
+                  forks={item.forks}
                 />
               ))}
             </div>
