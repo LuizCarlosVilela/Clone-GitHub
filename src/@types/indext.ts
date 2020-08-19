@@ -2,7 +2,7 @@ export interface APIUser {
   login: string;
   name: string;
   followers: number;
-  fllowing: number;
+  following: number;
   public_repos: number;
   avatar_url: string;
   blog?: string;

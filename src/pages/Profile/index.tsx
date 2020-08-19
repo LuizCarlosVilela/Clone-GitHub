@@ -86,7 +86,7 @@ const Profile: React.FC = () => {
             name={data.user.name}
             avatarUrl={data.user.avatar_url}
             followers={data.user.followers}
-            following={data.user.fllowing}
+            following={data.user.following}
             company={data.user.company}
             location={data.user.location}
             email={data.user.email}
