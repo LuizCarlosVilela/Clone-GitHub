@@ -10,6 +10,7 @@ import {
   CalendarHeading,
   RepoIcon,
   Tab,
+  Erro,
 } from "./styles";
 
 import ProfileDate from "../../components/ProfileDate";
@@ -45,10 +46,6 @@ const Profile: React.FC = () => {
 
       const shuffleRepos = repos.sort(() => 0.5 - Math.random());
       const sliceRepos = shuffleRepos.slice(0, 6);
-
-      // console.log(user);
-      // console.log(repos);
-
       setData({
         user,
         repos: sliceRepos,
@@ -57,10 +54,10 @@ const Profile: React.FC = () => {
   }, []);
 
   if (data?.error) {
-    return <h1>{data.error}</h1>;
+    return <Erro>{data.error}</Erro>;
   }
   if (!data?.user || !data?.repos) {
-    return <h1>Loading...</h1>;
+    return <Erro>Loading...</Erro>;
   }
 
   const TabContent = () => (

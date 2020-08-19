@@ -14,6 +14,13 @@ export const GithubLogo = styled(FaGithub)`
   width: 32px;
   height: 32px;
   flex-shrink: 0;
+
+  transition: 0.1s opacity;
+
+  &:focus,
+  &:hover {
+    opacity: 0.3;
+  }
 `;
 
 export const SearchForm = styled.form`

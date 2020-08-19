@@ -2,6 +2,15 @@ import styled from "styled-components";
 
 import { RiBookMarkLine } from "react-icons/ri";
 
+export const Erro = styled.h1`
+  text-align: center;
+  margin-top: 40vh;
+
+  transition: 0.5s text-shadow;
+
+  text-shadow: 0px 0px 2px blue;
+`;
+
 export const Container = styled.div`
   --horizontalPadding: 16px;
   --verticalPadding: 24px;

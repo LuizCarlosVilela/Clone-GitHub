@@ -98,6 +98,13 @@ export const LinkButton = styled.a`
     fill: var(--primary);
     margin-right: 10px;
   }
+
+  transition: 0.1s opacity;
+
+  &:focus,
+  &:hover {
+    opacity: 0.9;
+  }
 `;
 export const GitHubIcon = styled(FaGithub)`
   ${iconCSS}
