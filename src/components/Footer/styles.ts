@@ -17,7 +17,7 @@ export const Line = styled.div`
 
 export const GithubLogo = styled(FaGithub)`
   margin-top: 25px;
-  fill: var(--border);
+  fill: #0f0f0f;
 
   width: 24px;
   height: 24px;
