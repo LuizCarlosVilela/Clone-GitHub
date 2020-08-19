@@ -4,6 +4,15 @@ import { RiBookMarkLine, RiRestartLine } from "react-icons/ri";
 import { AiOutlineFork } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa";
 
+export const Erro = styled.h1`
+  text-align: center;
+  margin-top: 40vh;
+
+  transition: 0.5s text-shadow;
+
+  text-shadow: 0px 0px 2px blue;
+`;
+
 export const Container = styled.div`
   display: flex;
   flex-direction: column;

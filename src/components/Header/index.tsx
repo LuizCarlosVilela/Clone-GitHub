@@ -4,8 +4,6 @@ import { useNavigate, Link } from "react-router-dom";
 import { Container, GithubLogo, SearchForm, SunIcon, MoonIcon } from "./styles";
 import { ThemeName } from "../../styles/themes";
 
-import { FiMoon, FiSun } from "react-icons/fi";
-
 interface Props {
   themeName: ThemeName;
   setThemeName: (newName: ThemeName) => void;
@@ -17,6 +15,7 @@ const Header: React.FC<Props> = ({ themeName, setThemeName }) => {
 
   function hadleSubmit(event: React.FormEvent) {
     event.preventDefault();
+    setSearch("");
     navigate("/" + search.toLocaleLowerCase().trim());
   }
 

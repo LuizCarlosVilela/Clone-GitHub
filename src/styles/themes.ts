@@ -39,7 +39,7 @@ export const themes = {
     logo: "#fff",
     username: "#9b9b9b",
     search: "#151515",
-    "search-placeholder": "#c6c6c6",
+    "search-placeholder": "#000",
     icon: "#9b9b9b",
     link: "rgb(79, 140, 201)",
     border: "#343434",
