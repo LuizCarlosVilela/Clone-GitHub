@@ -1,9 +1,17 @@
 import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 
-import { Container, GithubLogo, SearchForm } from "./styles";
+import { Container, GithubLogo, SearchForm, SunIcon, MoonIcon } from "./styles";
+import { ThemeName } from "../../styles/themes";
 
-const Header: React.FC = () => {
+import { FiMoon, FiSun } from "react-icons/fi";
+
+interface Props {
+  themeName: ThemeName;
+  setThemeName: (newName: ThemeName) => void;
+}
+
+const Header: React.FC<Props> = ({ themeName, setThemeName }) => {
   const [search, setSearch] = useState("");
   const navigate = useNavigate();
 
@@ -12,11 +20,21 @@ const Header: React.FC = () => {
     navigate("/" + search.toLocaleLowerCase().trim());
   }
 
+  function toggleTheme() {
+    setThemeName(themeName === "light" ? "dark" : "light");
+  }
+
   return (
     <Container>
       <Link to="/">
         <GithubLogo />
       </Link>
+
+      {themeName === "dark" ? (
+        <SunIcon onClick={toggleTheme} />
+      ) : (
+        <MoonIcon onClick={toggleTheme} />
+      )}
 
       <SearchForm onSubmit={hadleSubmit}>
         <input
