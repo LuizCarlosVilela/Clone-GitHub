@@ -118,7 +118,7 @@ const Profile: React.FC = () => {
             </div>
           </Repos>
 
-          <CalendarHeading>506 contributions in the last year</CalendarHeading>
+          <CalendarHeading>584 contributions in the last year</CalendarHeading>
 
           <RandomCalendar />
         </RightSide>

@@ -28,6 +28,9 @@ export const Container = styled.div`
     .scale-4 {
       fill: var(--calendar-scale-4);
     }
+    .scale-5 {
+      fill: var(--calendar-scale-5);
+    }
 
     width: 893px;
   }
