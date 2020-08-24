@@ -32,7 +32,7 @@ const RandomCalendar: React.FC = () => {
           showWeekdayLabels
         />
       </div>
-      <span>Random Calendar</span>
+      <span>Learn how we count contributions</span>
     </Container>
   );
 };
@@ -191,6 +191,55 @@ const generateHeatmapValues = (startDate: Date, endDate: Date) => {
   values.push({ date: addDays(startDate, 267), count: 5 });
   values.push({ date: addDays(startDate, 271), count: 5 });
   values.push({ date: addDays(startDate, 272), count: 5 });
+
+  values.push({ date: addDays(startDate, 289), count: 5 });
+  values.push({ date: addDays(startDate, 290), count: 5 });
+  values.push({ date: addDays(startDate, 291), count: 5 });
+  values.push({ date: addDays(startDate, 292), count: 5 });
+  values.push({ date: addDays(startDate, 293), count: 5 });
+
+  values.push({ date: addDays(startDate, 295), count: 5 });
+
+  values.push({ date: addDays(startDate, 301), count: 5 });
+  values.push({ date: addDays(startDate, 302), count: 5 });
+
+  //Olho
+  values.push({ date: addDays(startDate, 304), count: 5 });
+  values.push({ date: addDays(startDate, 311), count: 5 });
+
+  values.push({ date: addDays(startDate, 325), count: 5 });
+  values.push({ date: addDays(startDate, 332), count: 5 });
+  //Boca
+  values.push({ date: addDays(startDate, 306), count: 5 });
+  values.push({ date: addDays(startDate, 314), count: 5 });
+
+  values.push({ date: addDays(startDate, 321), count: 5 });
+  values.push({ date: addDays(startDate, 328), count: 5 });
+
+  values.push({ date: addDays(startDate, 308), count: 5 });
+  values.push({ date: addDays(startDate, 309), count: 5 });
+
+  values.push({ date: addDays(startDate, 334), count: 5 });
+
+  values.push({ date: addDays(startDate, 315), count: 5 });
+  values.push({ date: addDays(startDate, 316), count: 5 });
+
+  values.push({ date: addDays(startDate, 322), count: 5 });
+  values.push({ date: addDays(startDate, 323), count: 5 });
+
+  values.push({ date: addDays(startDate, 329), count: 5 });
+  values.push({ date: addDays(startDate, 330), count: 5 });
+
+  values.push({ date: addDays(startDate, 336), count: 5 });
+  values.push({ date: addDays(startDate, 337), count: 5 });
+
+  values.push({ date: addDays(startDate, 343), count: 5 });
+
+  values.push({ date: addDays(startDate, 345), count: 5 });
+  values.push({ date: addDays(startDate, 346), count: 5 });
+  values.push({ date: addDays(startDate, 347), count: 5 });
+  values.push({ date: addDays(startDate, 348), count: 5 });
+  values.push({ date: addDays(startDate, 349), count: 5 });
 
   return values;
 };
