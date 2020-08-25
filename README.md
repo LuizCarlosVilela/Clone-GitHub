@@ -6,7 +6,7 @@
 
 <div align=center>
 
-![MIT][mit] ![Node_Badge][node_version_badge] ![Npm_Badge][npm_version_badge] ![React_Badge][web_react_badge] ![NodeJS_Badge][server_nodejs_badge] [![TypeScript](https://img.shields.io/badge/-TypeScript-007ACC?logo=typescript&logoColor=white&labelColor=007ACC)](https://github.com/ellerbrock/typescript-badges/)
+![Node_Badge][node_version_badge] ![Npm_Badge][npm_version_badge] ![React_Badge][web_react_badge] ![NodeJS_Badge][server_nodejs_badge] [![TypeScript](https://img.shields.io/badge/-TypeScript-007ACC?logo=typescript&logoColor=white&labelColor=007ACC)](https://github.com/ellerbrock/typescript-badges/)
   <a href="https://rocketseat.com.br" target="_blank">
     <img alt="Made by Rocketseat" src="https://img.shields.io/badge/made%20by-Rocketseat-%237519C1">
   </a>
@@ -20,16 +20,16 @@
 <h3 align=center>
   
 :books:
-CloneGitHub foi um projeto para replicar a interface do GitHub desenvolvido na **(UI Clone)** da **[Rocketseat][rocketseat_site]** utilizando as tecnologias ***TypeScript, Node e React ***.
+***CloneGitHub*** é um projeto para replicar a interface do GitHub desenvolvido na **(UI Clone)** da **[Rocketseat][rocketseat_site]** utilizando as tecnologias ***TypeScript, Node, React e Styled-Components***
 
 </h3>
 
 <h2 align=center>
-  <i>Telas Web </i> :pager:
+  <i>Dark-Mode Web </i> :pager:
 </h2>
 
 <div align=center>
-    <img src="/assets/video/pages.gif" alt="Pages Web" />
+    <img src="/assets/darkmode.gif" alt="Mode Dark/Light Web" />
 </div>
 
 <br />
@@ -39,7 +39,17 @@ CloneGitHub foi um projeto para replicar a interface do GitHub desenvolvido na *
 </h2>
 
 <div align=center>
-    <img src="/assets/video/responsividade.gif" alt="Teste de responsividade Web" />
+    <img src="/assets/responsividade.gif" alt="Responsividade Web" />
+</div>
+
+<br />
+
+<h2 align=center>
+  <i>Navegação Usuários</i> :pager:
+</h2>
+
+<div align=center>
+    <img src="/assets/navigation.gif" alt="Pages Web" />
 </div>
 
 <br /><br />
