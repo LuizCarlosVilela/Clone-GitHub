@@ -1,4 +1,4 @@
-# ***Clone GitHub :pager:*** 
+# ***Clone GitHub :computer:*** 
 
 <h1 align=center>
   <img src="assets/BannerGitHub.png" alt="GitHub Banner"/>
