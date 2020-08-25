@@ -24,6 +24,12 @@
 
 </h3>
 
+<h1 align=center>
+  <img src="assets/HomePage.png" alt="Tela Home"/>
+</h1>
+
+<br /><br />
+
 <h2 align=center>
   <i>Dark-Mode Web </i> :pager:
 </h2>
