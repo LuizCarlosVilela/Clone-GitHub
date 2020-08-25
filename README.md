@@ -57,7 +57,7 @@
 ## ***:rocket: OBJETIVO***
 
 <p align=justify> 
-O projeto tem como finalidade <strong>estabelecer uma conexão</strong> entre os <strong>professores</strong> (Proffys) e os <strong>alunos</strong> que desejam um professor com qualificação para dar orientações e aulas sobre determinada matéria. Solucionando então um <strong>problema de comunicação</strong> entre <strong>professores</strong> que queiram dar aulas, e <strong>alunos</strong> que desejam um professor para orientar nos <strong>estudos em diversas áreas</strong>.
+  Projeto tem como principal objetivo desenvolver conhecimento na linguagem <strong>typescript</strong> e na biblioteca <strong>ReactJS e Styled-Component</strong>, além de aprender sobre a API do próprio gitHub que foi usada como <strong>back-end</strong> da aplicação, como resultado conseguimos clonar a interface do <strong>GitHub</strong> e acrescentar um DarkMode bem interessante para a aplicação.
 </p>
 
 
@@ -68,22 +68,19 @@ O projeto tem como finalidade <strong>estabelecer uma conexão</strong> entre os
   - **[React Router Dom][react_router_dom]**
   - **[React Icons][react_icons]**
   - **[Axios][axios]**
-  - **[Leaflet][leaflet]**
   - **[React Leaflet][react_leaflet]**
-  - **[React Dropzone][react_dropzone]**
 
-  Arquivo json do fron-end do webSite <kbd>[package.json](https://github.com/LuizCarlosVilela/nlw-2-web/blob/master/package.json)</kbd>
+
+  Arquivo json do fron-end do webSite <kbd>[package.json](https://github.com/LuizCarlosVilela/clone-github/blob/master/package.json)</kbd>
 
 
 #### ***Utilitários***
 
-- Protótipo: **[Figma](https://www.figma.com/)** &rarr; **<kbd>[Protótipo (Proffy)](https://www.figma.com/file/GHGS126t7WYjnPZdRKChJF/Proffy-Web/duplicate)</kbd>**
 - Editor: **[Visual Studio Code][vscode]** &rarr; Extensions: **<kbd>[SQLite][vscode_sqlite_extension]</kbd>**
 - Markdown: **[StackEdit][stackedit]**, **<kbd>[Markdown Emoji][markdown_emoji]</kbd>**
 - Commit Conventional: **[Commitlint][commitlint]**
 - Teste de API: **[Insomnia][insomnia]**
 - Ícones: **[Feather Icons][feather_icons]**, **[Font Awesome][font_awesome]**
-- Fontes: **[Archivo][font_archivo]**, **[Poopins][font_poopins]**
 
 ## ***:wine_glass: COMO UTILIZAR***
 
@@ -107,35 +104,11 @@ Você precisa renomear o arquivo `.env-example` para `.env` e inserir as informa
 ```sh
 $ mv .env-example .env
 ```
-
-Instale as dependências contidas nos arquivos `package.json` que se encontram na raíz do repositório (para o gerenciamento de commits) no diretório do **website**. Para instalar as dependências, basta abrir o terminal no diretório e digitar o comando:
-
-```sh
-$ npm install
-
-# ou
-$ yarn
-```
-
-Exemplos:
-```sh
-# Instalando as dependências do commitlint:
-$ cd ./proffy
-$ npm install
-
-# Instalando as dependências do website:
-$ cd ./sources/website
-$ npm install
-```
-
-Veja os arquivos **`package.json`** do <kbd>[commitlint](./package.json)</kbd>, <kbd>[server](https://github.com/LuizCarlosVilela/nlw-2-backend/blob/master/package.json)</kbd>, <kbd>[website](https://github.com/LuizCarlosVilela/nlw-2-web/blob/master/package.json)</kbd> e <kbd>[mobile](https://github.com/LuizCarlosVilela/nlw-2-mobile/blob/master/package.json)</kbd>.
+Veja os arquivos **`package.json`** do <kbd>[commitlint](./package.json)</kbd>, <kbd>[website](https://github.com/LuizCarlosVilela/clone-github/blob/master/package.json)</kbd>.
 
 ### ***Utilizando o Website***
 
 ```sh
-# Abrindo o terminal no diretório do website:
-$ cd ./sources/website
-
 # Executando o website no modo de desenvolvimento:
 $ npm run start
 ```
@@ -148,17 +121,11 @@ $ npm run start
 
 <table style="width:100%">
   <tr align=center>
-    <th><strong>Next Level Week</strong></th>
     <th><strong>Rocketseat</strong></th>
     <th><strong>diego3g</strong></th>
-    <th><strong>maykbrito</strong></th>
+    <th><strong>guilhermerodz</strong></th>
   </tr>
   <tr align=center>
-    <td>
-      <a href="https://nextlevelweek.com/">
-        <img width="200" src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a15e5ee3-7ba9-4aae-ad19-bd86929051f1/download.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200808%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200808T220334Z&X-Amz-Expires=86400&X-Amz-Signature=7a15de22d455cd3d55bcb53c74e72e9e592c9bac6ac6ba2546c3b3bcaa27c1fe&X-Amz-SignedHeaders=host">
-      </a>
-    </td>
     <td>
       <a href="https://rocketseat.com.br/">
         <img width="200" height="180" src="https://user-images.githubusercontent.com/38081852/83981650-1e2e6680-a8f6-11ea-9f42-6df8fe809e4b.png">
@@ -171,7 +138,7 @@ $ npm run start
     </td>
     <td>
       <a href="https://github.com/maykbrito">
-        <img width="200" height="180" src="https://user-images.githubusercontent.com/38081852/83981753-1de29b00-a8f7-11ea-93cf-23d2ff65fa5c.png">
+        <img width="200" height="180" src="https://avatars0.githubusercontent.com/u/10366880?s=460&u=ae99daa8dbb052dfcd0048862ab87007f677e6ed&v=4">
       </a>
     </td>
   </tr>
@@ -186,12 +153,7 @@ $ npm run start
 - [ReactJS](https://reactjs.org/docs/getting-started.html) | [ReactJS pt-BR](https://pt-br.reactjs.org/docs/getting-started.html)
 - [TypeScript](https://www.typescriptlang.org/docs/home.html)
 - [React Native](https://reactnative.dev/docs/getting-started)
-- [Expo](https://expo.io/learn)
-- [Knex][knex]
-- [Express](https://expressjs.com/pt-br/)
 - [Node](https://nodejs.org/en/)
-- [Celebrate](https://github.com/arb/celebrate)
-- [Joi](https://hapi.dev/module/joi/)
 
 ## ***:page_with_curl: LICENÇA***
 
