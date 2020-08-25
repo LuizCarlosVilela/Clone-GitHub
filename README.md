@@ -104,6 +104,23 @@ Você precisa renomear o arquivo `.env-example` para `.env` e inserir as informa
 ```sh
 $ mv .env-example .env
 ```
+
+Instale as dependências contidas nos arquivos `package.json` que se encontram na raíz do repositório. Para instalar as dependências, basta abrir o terminal no diretório e digitar o comando:
+
+```sh
+$ npm install
+
+# ou
+$ yarn
+```
+
+Exemplos:
+```sh
+# Instalando as dependências do website:
+$ cd ./clone-github
+$ npm install
+
+```
 Veja os arquivos **`package.json`** do <kbd>[commitlint](./package.json)</kbd>, <kbd>[website](https://github.com/LuizCarlosVilela/clone-github/blob/master/package.json)</kbd>.
 
 ### ***Utilizando o Website***
