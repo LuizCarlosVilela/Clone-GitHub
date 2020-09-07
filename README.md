@@ -160,7 +160,7 @@ $ npm run start
       </a>
     </td>
     <td>
-      <a href="https://github.com/maykbrito">
+      <a href="https://github.com/guilhermerodz">
         <img width="200" height="180" src="https://avatars0.githubusercontent.com/u/10366880?s=460&u=ae99daa8dbb052dfcd0048862ab87007f677e6ed&v=4">
       </a>
     </td>
